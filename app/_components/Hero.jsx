@@ -3,6 +3,8 @@ import React from 'react';
 import _Footer from "./Footer";
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+
 
 function _Hero() {
   return (
@@ -59,13 +61,16 @@ function _Hero() {
             </p>
 
             <div className="mt-12 space-y-6 sm:space-y-0 sm:space-x-6 sm:flex">
+              <Link href="/dashboard">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-full px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl sm:w-auto hover:shadow-xl hover:shadow-purple-500/30"
               >
-                Start Free Trial
+                Start Now
               </motion.button>
+                              </Link>
+
 
               <motion.button
                 whileHover={{ scale: 1.05 }}
